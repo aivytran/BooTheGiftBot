@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BooTheGiftBot</title>
+    <title>OwlieTheGiftBot</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -26,6 +26,9 @@
         fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
 
+   </script>
+   <script type="text/javascript">
+     window.main_logo = "<%= asset_path("owl.png") %>"
    </script>
     <%= yield %>
   </body>
