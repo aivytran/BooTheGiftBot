@@ -17,7 +17,7 @@ body {
    margin: 0px;
 }
 
-div#master-view {
+#master-view {
   background-color: #F44336;
   height: 700px;
   text-align: center;
