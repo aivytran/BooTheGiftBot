@@ -14,11 +14,32 @@
  *= require_self
  */
 body {
-   margin: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  margin: 5px 15px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.header-right-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.header-right-links li {
+  margin: 0 20px;
 }
 
 #master-view {
   background-color: #F44336;
+  /*background-color: #4A5058;*/
   height: 700px;
   text-align: center;
   padding: 208px 0 0 0;

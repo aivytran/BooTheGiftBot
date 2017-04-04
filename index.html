@@ -6,12 +6,41 @@
     <title>Owlie the Gift Bot</title>
   </head>
   <body>
-    <div id="master-view">
-      <div class="privacy-header">
-        <h1>Owlie The Gift Bot</h1>
-        <img src="assets/images/owl.png" alt="logo"/>
-      </div>
+    <script>
 
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: "APP_ID",
+          xfbml: true,
+          version: "v2.6"
+        });
+
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) { return; }
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+         fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <nav>
+      <a href="">
+        <img src="assets/images/owl.png" alt="logo"/>
+      </a>
+      <h1>
+        <a href="">Owlie The Gift Bot</a>
+      </h1>
+      <ul class="header-right-links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <div id="master-view">
       <div class="facebook-button">
         <div class="fb-messengermessageus"
           messenger_app_id="223589748119371"
@@ -19,10 +48,6 @@
           color="blue"
           size="standard" >
         </div>
-      </div>
-
-      <div class="policy-link">
-        <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
   </body>
