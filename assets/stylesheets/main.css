@@ -15,11 +15,13 @@
  */
 body {
   margin: 0px;
+  font-family: "Shadows Into Light";
 }
 
 nav {
   display: flex;
-  margin: 5px 15px;
+  /*margin: 5px 15px;*/
+  padding: 5px 15px;
 }
 
 nav a {
@@ -38,11 +40,16 @@ nav a {
 }
 
 #master-view {
-  background-color: #F44336;
+  /*background-color: #f2ce4b;*/
+  background-color: #fca625;
   /*background-color: #4A5058;*/
   height: 700px;
-  text-align: center;
-  padding: 208px 0 0 0;
+  /*text-align: center;*/
+  /*padding: 208px 0 0 0;*/
+}
+
+.features {
+  padding: 15px;
 }
 
 #privacy{
@@ -77,12 +84,4 @@ nav a {
 .privacy-content h3 {
   color: #f44336;
   margin: 10px;
-}
-
-.facebook-button {
-  margin: 14px;
-}
-
-.policy-link {
-  margin: 16px;
 }
